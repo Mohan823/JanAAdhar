@@ -1,0 +1,76 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    font-size: 0.8rem;
+}
+
+main {
+    padding: 1rem;
+    margin-left: 15rem;
+    max-width: calc(100vw - 240px);
+}
+
+.brand {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 100vmax;
+}
+
+.sidebar {
+    width: 15rem;
+    min-height: 100vh;
+    position: fixed;
+    background-color: #0d6efd;
+}
+
+.sidebar-list {
+    overflow-y: scroll;
+    height: calc(100vh - 12rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar-list::-webkit-scrollbar {
+    width: 3px;
+}
+
+.sidebar-list::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 100vmax;
+}
+
+.sidebar-list::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 100vmax;
+}
+
+.sidebar-list .list-item {
+    display: flex;
+    color: white;
+    padding-inline: 1rem;
+    align-items: center;
+    transition: color 0.2s ease-in,
+        background-color 0.2s ease-in;
+}
+
+.sidebar-list .list-item:hover {
+    background-color: white;
+    color: #0d6efd;
+}
+
+.sidebar-list a {
+    color: inherit;
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    text-decoration: none;
+}
+
+.divider {
+    width: 90%;
+    height: 0.1px;
+    margin-inline: 5%;
+    background-color: white;
+    opacity: 0.2;
+}
