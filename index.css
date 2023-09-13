@@ -1,7 +1,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f7f7f7;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 main {
@@ -32,14 +32,9 @@ main {
 
 .sidebar-list {
     overflow-y: scroll;
-    height: calc(100vh - 12rem);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.sidebar-list-mobile {
-    height: calc(100vh - 9.5rem);
 }
 
 .sidebar-list::-webkit-scrollbar {
